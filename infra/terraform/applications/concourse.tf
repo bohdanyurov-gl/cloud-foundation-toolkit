@@ -61,6 +61,9 @@ concourse:
   web:
     externalUrl: https://${local.concourse_host}
     auth:
+      github:
+        enabled: true
+        displayName: GitHub
       oidc:
         enabled: true
         displayName: Google CFT CICD
