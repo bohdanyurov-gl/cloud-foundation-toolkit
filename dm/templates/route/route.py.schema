@@ -55,7 +55,6 @@ properties:
       required:
         - tags
         - destRange
-        - priority
       allOf:
         - oneOf:
             - required:
@@ -179,7 +178,6 @@ properties:
             matching route of equal prefix length. In cases where multiple routes have equal prefix length, the one
             with the lowest-numbered priority value wins. The default value is 1000.
             The priority value must be from 0 to 65535, inclusive.
-          default: 1000
           minimum: 0
           maximum: 65535
         destRange:
